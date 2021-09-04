@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./style.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <title>
+            Chandrama Sarker's Portfolio
+        </title>
+    </head>
+    <body>
+        <!--About Section-->
+        <main>
+        <header>
+            <nav class="topnav" id="portfolio Topnav">
+                <a href="#About">About</a>
+                <a href="#Skills">Skills</a>
+                <a href="#Accomplishments">Accomplishments</a>
+                <a href="#Contact">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="openMenu()"><i class="fa fa-bars"></i></a>
+            </nav>
+        <h1>
+            Chandrama Sarker
+        </h1>
+        </header>
+            <div id="aboutsection">
+                <a href="https://scholar.google.co.in/citations?user=shD4oqoAAAAJ&hl=en" target="_blank">
+                    <figure>
+                        <img src="QUT Day5 HR-35.jpg" alt="Chandrama Sarker Smiling to the camera" width="350" height= auto/>
+                    </figure>
+                </a>
+            <!-- About Section 
+            <p> This is a section about the Webpage of Chandrama Sarker's Portfolio </p>
+            -->
+                <h2 id="about"class="heading">About</h2>
+                <p>
+                    I am a geo-spatial  <strong>Data Scientist of Downer Defence Systems Managed Solutions</strong>. 
+                    Specialised in the field of GIS and remote sensing applications in disaster management with 10+ years 
+                    <br>
+                    of research experience I am motivated to utilize innovative problem-solving skills in association
+                    with big data analysis to develop solutions for research-based real-world challenges.
+                </p>
+                <h2 id="skills"class="heading">
+                    Skills
+                </h2>
+                <h4>
+                    Research Skills
+                    <ul  class="list">
+                        <li>Geostatistical applications and image analysis</li>
+                        <li>Satellite image pre- processing and geo-referencing</li>
+                        <li>Writing technical/ academic reports</li>
+                        <li>Neural networks applications on Remote sensing images</li>
+                        <li>UAV image analysis</li>
+                    </ul>
+                </h4>
+                <h4>
+                    Interpersonal Skills
+                    <ul  class="list">
+                        <li>Teamwork</li>
+                        <li>Management of teams</li>
+                        <li>Analytical skills</li>
+                    </ul>
+                </h4>
+                <h4>
+                    Technical Skills
+                    <ul  class="list"> 
+                        <li>Programming languages – MATLAB, R, Python</li>
+                        <li>Statistical software- SPSS-16</li>
+                        <li>GIS software – ESRI in Arc GIS Pro and Arc GIS Enterprise, ENVI, eCognition, Multispec, QGIS</li>
+                        <li>Cloud services - MS Azure</li>
+                        <li>3D and 4D mapping software- Luciad LightSpeed, ArcGIS Lidar Mapping, Digital Elevation Mapping and analysis on ArcGIS Pro</li>
+                        <li>Photogrammetry Software- WebODM, Pix4D</li>
+                        <li>Hands on experience on Tableau and Power BI</li>
+                    </ul>
+                </h4>
+            </div>
+            <div id="accomplishmentsection">
+                <h2 id="accomplishments"class="heading">
+                    Accomplishments
+                </h2>
+                <table>
+                    <tr>
+                        <th scope="col">Publications</th>
+                        <th scope="col">Awards</th>
+                        <th scope="col">Presentations</th>
+                    </tr>
+                    <tr>
+                        <td>Context</td>
+                        <td>Context</td>
+                        <td>Context</td>
+                    </tr>
+                </table>
+            <h3>Coding Examples</h3>
+            <a href="quiz.html" target="_blank">Take the Portfolio Quiz!</a>
+            </div>  
+            <div id="contactsection">
+                <h2 id="contact" class="contactform">
+                Contact
+                </h2>
+                <a href="https://www.linkedin.com/in/csarker/" target="_blank">LinkedIn</a>
+                <br>
+                <a href="https://orcid.org/0000-0001-6596-436X" target="_blank">ORCiD</a>
+                <br>
+                <br>
+                <form>
+                    <label for="name*">*Name:</label>
+                    <input type="text" name="name*" id="name*" required>
+                    <br>
+                    <br>
+                    <label for="email">*Email:</label>
+                    <input id="email" name="email" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    <br>
+                    <br>
+                    <label for="mobile">*Mobile(optional):</label>
+                    <input id="mobile" name="mobile" type="tel" pattern="[0-9]{10,16}" required>
+                    <br>
+                    <br>
+                    <label for="message*">*Leave your message below</label>
+                    <br>
+                    <br>
+                    <textarea id="message" name="message" rows="5" cols="30" required>                   
+                    </textarea>
+                    <br>
+                    <br>
+                    <input type="submit"value="Send" id="submit" >
+                    <audio id="beep" src=" boxingsound.mp3"></audio>
+                </form>
+            </div>
+        </main>
+        <script src="./nav.js"></script>
+
+        <script type="text/javascript">
+        function goodbye(e) {
+            if (!e) e = window.event;
+            //e.cancelBubble is supported by IE - this will kill the bubbling process.
+            e.cancelBubble = true;
+            e.returnValue = 'You sure you want to leave?'; //This is displayed on the dialog
+
+
+            //e.stopPropagation works in Firefox.
+            if (e.stopPropagation) {
+                e.stopPropagation();
+                e.preventDefault();
+            }
+        }
+        window.onbeforeunload=goodbye;
+        </script>
+    </body>
+</html>
